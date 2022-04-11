@@ -1,0 +1,12 @@
+import dtalproject.Bid
+model {
+    Bid bid
+}
+json {
+    id bid.id
+    date bid.date
+    amount bid.amount
+    driverName bid.licence.driver.name
+    licenseNumber bid.licence.licenceNumber
+    licenceClass bid.licence.licenceClass
+}

@@ -1,0 +1,10 @@
+import dtalproject.Licence
+model {
+    Licence licence
+}
+json {
+    id licence.id
+    licenceNumber licence.licenceNumber
+    licenceClass licence.licenceClass
+    driver name: licence.driver.name, id: licence.driver.id
+}
